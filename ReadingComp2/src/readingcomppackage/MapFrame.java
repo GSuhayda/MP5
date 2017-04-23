@@ -26,7 +26,7 @@ public class MapFrame extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
+
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -107,13 +107,12 @@ public class MapFrame extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sideview.png"))); // NOI18N
 
-        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, this, org.jdesktop.beansbinding.ObjectProperty.create(), jLabel3, org.jdesktop.beansbinding.BeanProperty.create("background"));
-        bindingGroup.addBinding(binding);
+
 
         getContentPane().add(jLabel3);
         jLabel3.setBounds(0, 124, 1030, 340);
 
-        bindingGroup.bind();
+
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -200,6 +199,5 @@ public class MapFrame extends javax.swing.JFrame {
     private javax.swing.JButton room3Btn;
     private javax.swing.JButton room4Btn;
     private javax.swing.JButton room5Btn;
-    private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
 }
