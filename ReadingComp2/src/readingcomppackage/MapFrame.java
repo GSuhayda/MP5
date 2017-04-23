@@ -1,4 +1,4 @@
-package readingcomppackage;
+package readingcomp2;
 
 /*
 * To change this license header, choose License Headers in Project Properties.
@@ -11,7 +11,7 @@ package readingcomppackage;
  * @author grant
  */
 public class MapFrame extends javax.swing.JFrame {
-    private int progressCount = 0;
+    
     /**
      * Creates new form mapFrame
      */
@@ -27,6 +27,7 @@ public class MapFrame extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -35,73 +36,83 @@ public class MapFrame extends javax.swing.JFrame {
         room3Btn = new javax.swing.JButton();
         room4Btn = new javax.swing.JButton();
         room5Btn = new javax.swing.JButton();
-        progress = new javax.swing.JProgressBar();
+        jProgressBar1 = new javax.swing.JProgressBar();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(1037, 493));
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel1.setText("Welcome to Your Journey");
+        jLabel1.setText("Welcome to Your Voyage");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(310, 20, 441, 47);
+        jLabel1.setBounds(290, 40, 441, 47);
 
         jLabel2.setText("Pick a room to explore!");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(460, 70, 131, 16);
+        jLabel2.setBounds(450, 100, 131, 16);
 
-        room1Btn.setText("Engine Room");
+        room1Btn.setText("room1");
         room1Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 room1BtnActionPerformed(evt);
             }
         });
         getContentPane().add(room1Btn);
-        room1Btn.setBounds(90, 300, 110, 32);
+        room1Btn.setBounds(110, 310, 67, 32);
 
-        room2Btn.setText("Pilot House");
+        room2Btn.setText("room2");
         room2Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 room2BtnActionPerformed(evt);
             }
         });
         getContentPane().add(room2Btn);
-        room2Btn.setBounds(760, 290, 100, 32);
+        room2Btn.setBounds(260, 350, 67, 32);
 
-        room3Btn.setText("Kitchen");
+        room3Btn.setText("room3");
         room3Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 room3BtnActionPerformed(evt);
             }
         });
         getContentPane().add(room3Btn);
-        room3Btn.setBounds(290, 310, 73, 32);
+        room3Btn.setBounds(430, 310, 67, 32);
 
-        room4Btn.setText("Ballroom");
+        room4Btn.setText("room4");
         room4Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 room4BtnActionPerformed(evt);
             }
         });
         getContentPane().add(room4Btn);
-        room4Btn.setBounds(440, 340, 90, 32);
+        room4Btn.setBounds(620, 270, 67, 32);
 
-        room5Btn.setText("Life Boats");
+        room5Btn.setText("room5");
         room5Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 room5BtnActionPerformed(evt);
             }
         });
         getContentPane().add(room5Btn);
-        room5Btn.setBounds(570, 310, 100, 32);
-        getContentPane().add(progress);
-        progress.setBounds(20, 450, 1000, 20);
+        room5Btn.setBounds(800, 310, 67, 32);
+
+        jProgressBar1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jProgressBar1PropertyChange(evt);
+            }
+        });
+        getContentPane().add(jProgressBar1);
+        jProgressBar1.setBounds(10, 520, 990, 20);
 
         jLabel3.setIcon(new javax.swing.ImageIcon("D:\\Dropbox\\MP5\\ReadingComp2\\ReadingComp2\\images\\sideview.png")); // NOI18N
-        jLabel3.setText("    ");
+
+        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, this, org.jdesktop.beansbinding.ObjectProperty.create(), jLabel3, org.jdesktop.beansbinding.BeanProperty.create("background"));
+        bindingGroup.addBinding(binding);
+
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(6, 112, 1040, 306);
+        jLabel3.setBounds(0, 124, 1014, 306);
+
+        bindingGroup.bind();
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -109,9 +120,6 @@ public class MapFrame extends javax.swing.JFrame {
     private void room1BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_room1BtnActionPerformed
         RoomFrame room1 = new RoomFrame(this);
         room1.setVisible(true);
-        progressCount += 5;
-        progress.setValue(progressCount);
-        progress.setMaximum(100);
         this.setVisible(false);
     }//GEN-LAST:event_room1BtnActionPerformed
     
@@ -138,6 +146,10 @@ public class MapFrame extends javax.swing.JFrame {
         room5.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_room5BtnActionPerformed
+
+    private void jProgressBar1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jProgressBar1PropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jProgressBar1PropertyChange
     
     /**
      * @param args the command line arguments
@@ -181,11 +193,12 @@ public class MapFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JProgressBar progress;
+    private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JButton room1Btn;
     private javax.swing.JButton room2Btn;
     private javax.swing.JButton room3Btn;
     private javax.swing.JButton room4Btn;
     private javax.swing.JButton room5Btn;
+    private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
 }
