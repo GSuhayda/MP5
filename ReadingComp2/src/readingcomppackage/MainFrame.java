@@ -12,12 +12,12 @@ package readingcomppackage;
  */
 public class MainFrame extends javax.swing.JFrame {
 MapFrame frame = new MapFrame();
+private Person student;
     /**
      * Creates new form mainFrame
      */
     public MainFrame() {
         initComponents();
-        
     }
 
     /**
@@ -64,6 +64,8 @@ MapFrame frame = new MapFrame();
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/main.jpg"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -78,14 +80,14 @@ MapFrame frame = new MapFrame();
                         .addGap(172, 172, 172)
                         .addComponent(nameTextField))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(230, 230, 230)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(319, 319, 319)
                         .addComponent(playerName, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(367, 367, 367)
-                        .addComponent(beginBtn)))
+                        .addComponent(beginBtn))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(256, 256, 256)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -101,7 +103,7 @@ MapFrame frame = new MapFrame();
                 .addComponent(playerName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(beginBtn)
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
 
         pack();
@@ -112,6 +114,7 @@ MapFrame frame = new MapFrame();
     }//GEN-LAST:event_playerNameActionPerformed
 
     private void beginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_beginBtnActionPerformed
+       student = new Person(playerName.getText());
        this.setVisible(false);
        frame.setVisible(true);
     }//GEN-LAST:event_beginBtnActionPerformed
