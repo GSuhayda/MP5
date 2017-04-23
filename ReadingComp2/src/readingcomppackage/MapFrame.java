@@ -105,13 +105,11 @@ public class MapFrame extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sideview.png"))); // NOI18N
 
-        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, this, org.jdesktop.beansbinding.ObjectProperty.create(), jLabel3, org.jdesktop.beansbinding.BeanProperty.create("background"));
-        bindingGroup.addBinding(binding);
+
 
         getContentPane().add(jLabel3);
         jLabel3.setBounds(0, 124, 1030, 340);
 
-        bindingGroup.bind();
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
