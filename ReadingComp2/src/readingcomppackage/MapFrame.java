@@ -1,5 +1,4 @@
 package readingcomp2;
-
 /*
 * To change this license header, choose License Headers in Project Properties.
 * To change this template file, choose Tools | Templates
@@ -40,16 +39,17 @@ public class MapFrame extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImages(null);
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel1.setText("Welcome to Your Voyage");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(290, 40, 441, 47);
+        jLabel1.setBounds(290, 40, 441, 43);
 
         jLabel2.setText("Pick a room to explore!");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(450, 100, 131, 16);
+        jLabel2.setBounds(450, 100, 146, 16);
 
         room1Btn.setText("room1");
         room1Btn.addActionListener(new java.awt.event.ActionListener() {
@@ -58,7 +58,7 @@ public class MapFrame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(room1Btn);
-        room1Btn.setBounds(110, 310, 67, 32);
+        room1Btn.setBounds(110, 310, 85, 29);
 
         room2Btn.setText("room2");
         room2Btn.addActionListener(new java.awt.event.ActionListener() {
@@ -67,7 +67,7 @@ public class MapFrame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(room2Btn);
-        room2Btn.setBounds(260, 350, 67, 32);
+        room2Btn.setBounds(260, 350, 85, 29);
 
         room3Btn.setText("room3");
         room3Btn.addActionListener(new java.awt.event.ActionListener() {
@@ -76,7 +76,7 @@ public class MapFrame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(room3Btn);
-        room3Btn.setBounds(430, 310, 67, 32);
+        room3Btn.setBounds(430, 310, 85, 29);
 
         room4Btn.setText("room4");
         room4Btn.addActionListener(new java.awt.event.ActionListener() {
@@ -85,7 +85,7 @@ public class MapFrame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(room4Btn);
-        room4Btn.setBounds(620, 270, 67, 32);
+        room4Btn.setBounds(620, 270, 85, 29);
 
         room5Btn.setText("room5");
         room5Btn.addActionListener(new java.awt.event.ActionListener() {
@@ -94,7 +94,7 @@ public class MapFrame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(room5Btn);
-        room5Btn.setBounds(800, 310, 67, 32);
+        room5Btn.setBounds(800, 310, 85, 29);
 
         jProgressBar1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
             public void propertyChange(java.beans.PropertyChangeEvent evt) {
@@ -104,13 +104,13 @@ public class MapFrame extends javax.swing.JFrame {
         getContentPane().add(jProgressBar1);
         jProgressBar1.setBounds(10, 520, 990, 20);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\Dropbox\\MP5\\ReadingComp2\\ReadingComp2\\images\\sideview.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sideview.png"))); // NOI18N
 
         org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, this, org.jdesktop.beansbinding.ObjectProperty.create(), jLabel3, org.jdesktop.beansbinding.BeanProperty.create("background"));
         bindingGroup.addBinding(binding);
 
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(0, 124, 1014, 306);
+        jLabel3.setBounds(0, 124, 1030, 340);
 
         bindingGroup.bind();
 
