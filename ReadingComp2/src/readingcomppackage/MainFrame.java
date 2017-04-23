@@ -32,9 +32,11 @@ MapFrame frame = new MapFrame();
         nameTextField = new javax.swing.JLabel();
         beginBtn = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        testTextArea = new javax.swing.JTextArea();
-        jTextField1 = new javax.swing.JTextField();
+        description = new javax.swing.JTextArea();
+        description.setEditable(false);
+        playerName = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
+        description.setEditable(false);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 800));
@@ -49,66 +51,65 @@ MapFrame frame = new MapFrame();
             }
         });
 
-        testTextArea.setColumns(20);
-        testTextArea.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        testTextArea.setRows(5);
-        testTextArea.setText("Welcome to the exploration of the R.M.S. Titanic.  Here is where you\nwill be able to dive deep to the bottom of the ocean to explore the\nmany different rooms of the Titanic!  Please enter your name in the \nbox below.");
-        jScrollPane1.setViewportView(testTextArea);
+        description.setColumns(20);
+        description.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        description.setRows(5);
+        description.setText("Welcome to the exploration of the R.M.S. Titanic.  Here is where you\nwill be able to dive deep to the bottom of the ocean to explore the\nmany different rooms of the Titanic!  Please enter your name in the \nbox below.");
+        jScrollPane1.setViewportView(description);
 
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        playerName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        playerName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                playerNameActionPerformed(evt);
             }
         });
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\grant\\Documents\\GitHub\\ReadingComp2\\src\\images\\main.jpg")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(beginBtn)
-                .addGap(339, 339, 339))
+                .addGap(0, 25, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 814, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(164, 164, 164)
+                        .addGap(172, 172, 172)
                         .addComponent(nameTextField))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(230, 230, 230)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(319, 319, 319)
+                        .addComponent(playerName, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(278, 278, 278)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(23, 23, 23))
+                        .addGap(367, 367, 367)
+                        .addComponent(beginBtn)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(55, 55, 55)
+                .addGap(40, 40, 40)
                 .addComponent(nameTextField)
-                .addGap(3, 3, 3)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(42, 42, 42)
+                .addComponent(playerName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(beginBtn)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    private void playerNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playerNameActionPerformed
+        
+    }//GEN-LAST:event_playerNameActionPerformed
 
     private void beginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_beginBtnActionPerformed
        this.setVisible(false);
@@ -155,10 +156,10 @@ MapFrame frame = new MapFrame();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton beginBtn;
+    private javax.swing.JTextArea description;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel nameTextField;
-    private javax.swing.JTextArea testTextArea;
+    private javax.swing.JTextField playerName;
     // End of variables declaration//GEN-END:variables
 }
