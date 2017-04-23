@@ -1,4 +1,4 @@
-package readingcomp2;
+package readingcomppackage;
 
 /*
 * To change this license header, choose License Headers in Project Properties.

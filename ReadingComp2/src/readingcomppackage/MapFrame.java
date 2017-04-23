@@ -1,4 +1,4 @@
-package readingcomp2;
+package readingcomppackage;
 /*
 * To change this license header, choose License Headers in Project Properties.
 * To change this template file, choose Tools | Templates
@@ -10,14 +10,14 @@ package readingcomp2;
  * @author grant
  */
 public class MapFrame extends javax.swing.JFrame {
-    
+
     /**
      * Creates new form mapFrame
      */
     public MapFrame() {
         initComponents();
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -116,25 +116,25 @@ public class MapFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    
+
     private void room1BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_room1BtnActionPerformed
         RoomFrame room1 = new RoomFrame(this);
         room1.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_room1BtnActionPerformed
-    
+
     private void room2BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_room2BtnActionPerformed
         RoomFrame room2 = new RoomFrame(this);
         room2.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_room2BtnActionPerformed
-    
+
     private void room3BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_room3BtnActionPerformed
         RoomFrame room3 = new RoomFrame(this);
         room3.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_room3BtnActionPerformed
-    
+
     private void room4BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_room4BtnActionPerformed
         RoomFrame room4 = new RoomFrame(this);
         room4.setVisible(true);
@@ -150,7 +150,7 @@ public class MapFrame extends javax.swing.JFrame {
     private void jProgressBar1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jProgressBar1PropertyChange
         // TODO add your handling code here:
     }//GEN-LAST:event_jProgressBar1PropertyChange
-    
+
     /**
      * @param args the command line arguments
      */
@@ -180,7 +180,7 @@ public class MapFrame extends javax.swing.JFrame {
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
-        
+
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -188,7 +188,7 @@ public class MapFrame extends javax.swing.JFrame {
             }
         });
     }
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -199,6 +199,5 @@ public class MapFrame extends javax.swing.JFrame {
     private javax.swing.JButton room3Btn;
     private javax.swing.JButton room4Btn;
     private javax.swing.JButton room5Btn;
-    private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
 }
