@@ -142,9 +142,7 @@ public class MapFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_room4BtnActionPerformed
 
     private void room5BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_room5BtnActionPerformed
-        RoomFrame room5 = new RoomFrame(this);
-        room5.setVisible(true);
-        this.setVisible(false);
+        Room lifeboats = new Room ("lifeboats");
     }//GEN-LAST:event_room5BtnActionPerformed
 
     private void jProgressBar1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jProgressBar1PropertyChange
