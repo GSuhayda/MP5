@@ -27,7 +27,6 @@ public class MapFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         room1Btn = new javax.swing.JButton();
@@ -50,52 +49,52 @@ public class MapFrame extends javax.swing.JFrame {
 
         jLabel2.setText("Pick a room to explore!");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(450, 100, 131, 16);
+        jLabel2.setBounds(450, 100, 110, 14);
 
-        room1Btn.setText("room1");
+        room1Btn.setText("3rd Class Hold");
         room1Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 room1BtnActionPerformed(evt);
             }
         });
         getContentPane().add(room1Btn);
-        room1Btn.setBounds(110, 310, 67, 32);
+        room1Btn.setBounds(100, 310, 100, 23);
 
-        room2Btn.setText("room2");
+        room2Btn.setText("Engine Room");
         room2Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 room2BtnActionPerformed(evt);
             }
         });
         getContentPane().add(room2Btn);
-        room2Btn.setBounds(260, 350, 67, 32);
+        room2Btn.setBounds(260, 350, 95, 23);
 
-        room3Btn.setText("room3");
+        room3Btn.setText("Ball Room");
         room3Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 room3BtnActionPerformed(evt);
             }
         });
         getContentPane().add(room3Btn);
-        room3Btn.setBounds(430, 310, 67, 32);
+        room3Btn.setBounds(441, 310, 79, 23);
 
-        room4Btn.setText("room4");
+        room4Btn.setText("Pilot House");
         room4Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 room4BtnActionPerformed(evt);
             }
         });
         getContentPane().add(room4Btn);
-        room4Btn.setBounds(620, 270, 67, 32);
+        room4Btn.setBounds(598, 270, 85, 23);
 
-        room5Btn.setText("room5");
+        room5Btn.setText("Life Boats");
         room5Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 room5BtnActionPerformed(evt);
             }
         });
         getContentPane().add(room5Btn);
-        room5Btn.setBounds(800, 310, 67, 32);
+        room5Btn.setBounds(783, 310, 80, 23);
 
         jProgressBar1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
             public void propertyChange(java.beans.PropertyChangeEvent evt) {
@@ -106,7 +105,6 @@ public class MapFrame extends javax.swing.JFrame {
         jProgressBar1.setBounds(10, 460, 990, 20);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sideview.png"))); // NOI18N
-
 
 
         getContentPane().add(jLabel3);
@@ -142,9 +140,7 @@ public class MapFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_room4BtnActionPerformed
 
     private void room5BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_room5BtnActionPerformed
-        RoomFrame room5 = new RoomFrame(this);
-        room5.setVisible(true);
-        this.setVisible(false);
+        Room lifeboats = new Room ("lifeboats");
     }//GEN-LAST:event_room5BtnActionPerformed
 
     private void jProgressBar1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jProgressBar1PropertyChange
