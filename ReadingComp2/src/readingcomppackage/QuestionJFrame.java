@@ -194,7 +194,7 @@ public class QuestionJFrame extends javax.swing.JFrame {
         
         //Correct answer selected, question 4
         if (this.correctAnswerCurrent == answer && this.questionNumber == 4) {
-            JOptionPane.showMessageDialog(null, "Good job, that is correct. You have completed this room.");    //Display message
+            JOptionPane.showMessageDialog(this, "Good job, that is correct. You have completed this room.");    //Display message
             setVisible(false);      //Close room frame
         }
     }   
@@ -205,7 +205,7 @@ public class QuestionJFrame extends javax.swing.JFrame {
      */
     public void correctAnswer() {
         
-        JOptionPane.showMessageDialog(null, "Good job, that is correct.");      //Display correct message
+        JOptionPane.showMessageDialog(this, "Good job, that is correct.");      //Display correct message
         nextQuestion();                                                         //Setup for next question 
     }
 
