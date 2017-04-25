@@ -56,20 +56,20 @@
     </Component>
     <Component class="javax.swing.JButton" name="room1Btn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="room1"/>
+        <Property name="text" type="java.lang.String" value="3rd Class Hold"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="room1BtnActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="110" y="310" width="-1" height="-1"/>
+          <AbsoluteConstraints x="100" y="310" width="100" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="room2Btn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="room2"/>
+        <Property name="text" type="java.lang.String" value="Engine Room"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="room2BtnActionPerformed"/>
@@ -82,40 +82,40 @@
     </Component>
     <Component class="javax.swing.JButton" name="room3Btn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="room3"/>
+        <Property name="text" type="java.lang.String" value="Ball Room"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="room3BtnActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="430" y="310" width="-1" height="-1"/>
+          <AbsoluteConstraints x="441" y="310" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="room4Btn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="room4"/>
+        <Property name="text" type="java.lang.String" value="Pilot House"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="room4BtnActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="620" y="270" width="-1" height="-1"/>
+          <AbsoluteConstraints x="598" y="270" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="room5Btn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="room5"/>
+        <Property name="text" type="java.lang.String" value="Life Boats"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="room5BtnActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="800" y="310" width="-1" height="-1"/>
+          <AbsoluteConstraints x="783" y="310" width="80" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
